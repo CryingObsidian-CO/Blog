@@ -1,0 +1,7 @@
+[submodule "extensions/spdlog"]
+	path = extensions/spdlog
+	url = https://github.com/gabime/spdlog.git
+	branch = v1.x
+[submodule "extensions/oatpp"]
+	path = extensions/oatpp
+	url = https://github.com/oatpp/oatpp.git

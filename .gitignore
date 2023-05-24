@@ -1,0 +1,13 @@
+# 忽略build文件夹
+/build
+# 忽略Logs文件夹
+/Logs
+# 忽略日志文件
+*.log
+# 忽略常用IDE的配置相关文件
+# VSCode
+/.vscode
+*.code-workspace  
+
+/doc
+/resource
