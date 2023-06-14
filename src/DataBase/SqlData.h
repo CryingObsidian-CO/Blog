@@ -13,7 +13,7 @@ struct SqlData
 
     enum_field_types type = MYSQL_TYPE_STRING; // 类型
     const char *data = 0;                      // 存放具体数据
-    unsigned int size = 0;
+    unsigned int size = 0;                     // 存放数据大小
 };
 
 #endif

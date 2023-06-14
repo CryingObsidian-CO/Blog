@@ -5,7 +5,9 @@ INCLUDE_DIRECTORIES(
     ./DataBase
     ./Logger
     ./Web
+    ./Config
     ${PROJECT_SOURCE_DIR}/extensions/spdlog/include
+    ${PROJECT_SOURCE_DIR}/extensions/target/**
     
     ${MYSQL_INCLUDE_DIR}
 )

@@ -38,7 +38,7 @@ std::shared_ptr<spdlog::logger> Loggers::getLogger(const std::string &logger_nam
     auto logger = spdlog::get(logger_name);
     if (!logger)
     {
-        spdlog::warn("can't 'find the logger named:" + logger_name + ", use the default logger");
+        spdlog::warn("can't 'find the logger named: {0} , use the default logger", logger_name);
         return getLogger("default_Logger");
     }
     return logger;

@@ -146,4 +146,4 @@ namespace Loggers
 
 };
 
-#endif
+#endif // _LOGGER_HPP

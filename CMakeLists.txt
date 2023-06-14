@@ -14,13 +14,11 @@ blog_project_extract_version()
 
 PROJECT(Blog VERSION ${BLOG_PROJECT_VERSION} LANGUAGES CXX) 
 
-# OPTION(BUILD_TESTS "Build with tests" OFF)
-
-# MESSAGE(STATUS "Build with tests: ${BUILD_TESTS}")
+OPTION(BUILD_TESTS "Build with tests" ON)
 
 MESSAGE(STATUS ${Blue} "--------------------------------")                                
 MESSAGE(STATUS "Build Blog: ${BLOG_PROJECT_VERSION}")
-# MESSAGE(STATUS "Build with tests: ${BUILD_TESTS}")
+MESSAGE(STATUS "Build with tests: ${BUILD_TESTS}")
 MESSAGE(STATUS "CMAKE_INSTALL_PREFIX: ${CMAKE_INSTALL_PREFIX}")
 IF (NOT CMAKE_TOOLCHAIN_FILE)
     MESSAGE(STATUS "CMAKE_TOOLCHAIN_FILE: ${CMAKE_TOOLCHAIN_FILE}")
@@ -56,7 +54,7 @@ LOAD_LIBMYSQL(TARGET_OS TARGET_ARCH)
 #--------------------------------------------
 MESSAGE(STATUS ${Blue} "--------------------------------")
 # --------------------------------------------
-ADD_SUBDIRECTORY(extensions)
+add_subdirectory(extensions)
 
 #--------------------------------------------
 # Build application
@@ -68,6 +66,6 @@ add_subdirectory(src)
     
 
 IF(BUILD_TESTS)
-#     MESSAGE(STATUS ${Blue} "--------------------------------")
-#     add_subdirectory(tests)
+    MESSAGE(STATUS ${Blue} "--------------------------------")
+    # add_subdirectory(tests)
 ENDIF()

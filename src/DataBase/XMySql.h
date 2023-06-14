@@ -74,4 +74,4 @@ protected:
     // int GetTableField(std::string table_name);
 };
 
-#endif
+#endif // _XMYSQL_H

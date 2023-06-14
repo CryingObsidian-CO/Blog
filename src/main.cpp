@@ -17,9 +17,11 @@ int main()
     oatpp::base::Environment::destroy();
     */
 
+    std::cout << "\033[0;34m Start JsonUtils.h tese!! \033[0m" << std::endl;
+
     Loggers::Log("default_Logger", spdlog::level::level_enum::info, uuid::generate());
     // Log("default_Logger", spdlog::level::level_enum::info, "Hello, {}!：{}", "World", "←↑→↓↖↙↗↘↕");
     // spdlog::debug("Hello, {}!：{}", "World", "OK!");
 
-    return 0;
+    return EXIT_SUCCESS;
 }

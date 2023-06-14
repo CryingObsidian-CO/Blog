@@ -9,7 +9,7 @@
 #include <uuid/uuid.h>
 #else
 #error "uuid unsupport platform"
-#endif
+#endif // defined(_WIN32)
 
 #define GUID_LEN 64
 
@@ -54,7 +54,7 @@ namespace uuid
 
         return std::move(std::string(buf));
     }
-#endif
+#endif // defined(_WIN32)
 }
 
-#endif
+#endif // _UUID_GENERATOR_H
